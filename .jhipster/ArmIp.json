@@ -1,0 +1,35 @@
+{
+    "name": "ArmIp",
+    "fields": [
+        {
+            "fieldName": "ip",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "ipVersion",
+            "fieldType": "IpVersion",
+            "fieldValues": "IPV4,IPV6"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "arm",
+            "otherEntityRelationshipName": "ip",
+            "relationshipName": "arm",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190603141354",
+    "entityTableName": "arm_ip",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
