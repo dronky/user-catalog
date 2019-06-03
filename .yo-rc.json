@@ -1,0 +1,45 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "userCatalog",
+    "packageName": "com.zos.usercatalog",
+    "packageFolder": "com/zos/usercatalog",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "cucumber"
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "6.0.1",
+    "jwtSecretKey": "YTA4NGY0MzQyNTBjYThkNGNjODM3ZjEyMTZhOWUzMjBjYjlhOTE1ZTBkOWJmYTZjOTZjOGM2ZmFkYTZmYTc5MGJmODc1MjkxMzU3YmNiYzVhMzgxZDUxMTExZDkyMWQyN2Q3ZWY5NTM0MWIwMTcxNTM0NTY0ZGRlMzVkYjk0ODM=",
+    "clientTheme": "none",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "dronky",
+  "repository-name": "user-catalog"
+}
