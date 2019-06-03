@@ -1,0 +1,24 @@
+{
+  "userCatalogApp": {
+    "racfGroup": {
+      "home": {
+        "title": "Racf Groups",
+        "createLabel": "Create a new Racf Group",
+        "createOrEditLabel": "Create or edit a Racf Group",
+        "search": "Search for Racf Group"
+      },
+      "created": "A new Racf Group is created with identifier {{ param }}",
+      "updated": "A Racf Group is updated with identifier {{ param }}",
+      "deleted": "A Racf Group is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Racf Group {{ id }}?"
+      },
+      "detail": {
+        "title": "Racf Group"
+      },
+      "name": "Name",
+      "gid": "Gid",
+      "name": "Name"
+    }
+  }
+}
