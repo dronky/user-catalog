@@ -1,0 +1,29 @@
+{
+  "userCatalogApp": {
+    "racfUser": {
+      "home": {
+        "title": "Racf Users",
+        "createLabel": "Create a new Racf User",
+        "createOrEditLabel": "Create or edit a Racf User",
+        "search": "Search for Racf User"
+      },
+      "created": "A new Racf User is created with identifier {{ param }}",
+      "updated": "A Racf User is updated with identifier {{ param }}",
+      "deleted": "A Racf User is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Racf User {{ id }}?"
+      },
+      "detail": {
+        "title": "Racf User"
+      },
+      "name": "Name",
+      "uid": "Uid",
+      "type": "Type",
+      "owner": "Owner",
+      "request": "Request",
+      "arm": "Arm",
+      "group": "Group",
+      "system": "System"
+    }
+  }
+}

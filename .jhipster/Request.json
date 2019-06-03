@@ -1,0 +1,31 @@
+{
+    "name": "Request",
+    "fields": [
+        {
+            "fieldName": "esppRequest",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "asozRequest",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "racfUser",
+            "otherEntityRelationshipName": "request",
+            "relationshipName": "racfUser",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190603145915",
+    "entityTableName": "request",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

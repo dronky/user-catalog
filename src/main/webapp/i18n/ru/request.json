@@ -1,0 +1,24 @@
+{
+  "userCatalogApp": {
+    "request": {
+      "home": {
+        "title": "Requests",
+        "createLabel": "Создать новый Request",
+        "createOrEditLabel": "Создать или отредактировать Request",
+        "search": "Найти Request"
+      },
+      "created": "Новый Request создан с идентификатором {{ param }}",
+      "updated": "Request обновлен с идентификатором {{ param }}",
+      "deleted": "Request удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Request {{ id }}?"
+      },
+      "detail": {
+        "title": "Request"
+      },
+      "esppRequest": "Espp Request",
+      "asozRequest": "Asoz Request",
+      "racfUser": "Racf User"
+    }
+  }
+}
