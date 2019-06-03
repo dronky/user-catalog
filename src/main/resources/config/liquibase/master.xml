@@ -11,6 +11,16 @@
     <property name="floatType" value="float" dbms="mysql, oracle, mssql, mariadb"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190603133001_added_entity_RacfUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190603133002_added_entity_RacfGroup.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190603133003_added_entity_Arm.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190603133004_added_entity_ArmIp.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190603133005_added_entity_System.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190603133006_added_entity_Owner.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190603133007_added_entity_Request.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20190603133001_added_entity_constraints_RacfUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190603133004_added_entity_constraints_ArmIp.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190603133007_added_entity_constraints_Request.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

@@ -1,0 +1,25 @@
+{
+  "userCatalogApp": {
+    "owner": {
+      "home": {
+        "title": "Owners",
+        "createLabel": "Создать новый Owner",
+        "createOrEditLabel": "Создать или отредактировать Owner",
+        "search": "Найти Owner"
+      },
+      "created": "Новый Owner создан с идентификатором {{ param }}",
+      "updated": "Owner обновлен с идентификатором {{ param }}",
+      "deleted": "Owner удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Owner {{ id }}?"
+      },
+      "detail": {
+        "title": "Owner"
+      },
+      "name": "Name",
+      "familyName": "Family Name",
+      "patronymic": "Patronymic",
+      "phone": "Phone"
+    }
+  }
+}

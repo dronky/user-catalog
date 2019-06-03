@@ -1,0 +1,24 @@
+{
+  "userCatalogApp": {
+    "system": {
+      "home": {
+        "title": "Systems",
+        "createLabel": "Создать новый System",
+        "createOrEditLabel": "Создать или отредактировать System",
+        "search": "Найти System"
+      },
+      "created": "Новый System создан с идентификатором {{ param }}",
+      "updated": "System обновлен с идентификатором {{ param }}",
+      "deleted": "System удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить System {{ id }}?"
+      },
+      "detail": {
+        "title": "System"
+      },
+      "name": "Name",
+      "ip": "Ip",
+      "name": "Name"
+    }
+  }
+}
