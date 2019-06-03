@@ -1,0 +1,35 @@
+{
+    "name": "Arm",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "racfUser",
+            "otherEntityRelationshipName": "arm",
+            "relationshipName": "name"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "armIp",
+            "otherEntityRelationshipName": "arm",
+            "relationshipName": "ip"
+        }
+    ],
+    "changelogDate": "20190603133455",
+    "entityTableName": "arm",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
