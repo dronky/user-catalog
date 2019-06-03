@@ -1,0 +1,24 @@
+{
+  "userCatalogApp": {
+    "armIp": {
+      "home": {
+        "title": "Arm Ips",
+        "createLabel": "Создать новый Arm Ip",
+        "createOrEditLabel": "Создать или отредактировать Arm Ip",
+        "search": "Найти Arm Ip"
+      },
+      "created": "Новый Arm Ip создан с идентификатором {{ param }}",
+      "updated": "Arm Ip обновлен с идентификатором {{ param }}",
+      "deleted": "Arm Ip удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Arm Ip {{ id }}?"
+      },
+      "detail": {
+        "title": "Arm Ip"
+      },
+      "ip": "Ip",
+      "ipVersion": "Ip Version",
+      "ip": "Ip"
+    }
+  }
+}
