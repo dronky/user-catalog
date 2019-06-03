@@ -1,0 +1,24 @@
+{
+  "userCatalogApp": {
+    "arm": {
+      "home": {
+        "title": "Arms",
+        "createLabel": "Создать новый Arm",
+        "createOrEditLabel": "Создать или отредактировать Arm",
+        "search": "Найти Arm"
+      },
+      "created": "Новый Arm создан с идентификатором {{ param }}",
+      "updated": "Arm обновлен с идентификатором {{ param }}",
+      "deleted": "Arm удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Arm {{ id }}?"
+      },
+      "detail": {
+        "title": "Arm"
+      },
+      "name": "Name",
+      "name": "Name",
+      "ip": "Ip"
+    }
+  }
+}
