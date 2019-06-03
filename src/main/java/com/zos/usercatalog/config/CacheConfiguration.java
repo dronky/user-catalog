@@ -43,6 +43,20 @@ public class CacheConfiguration {
             createCache(cm, com.zos.usercatalog.domain.User.class.getName());
             createCache(cm, com.zos.usercatalog.domain.Authority.class.getName());
             createCache(cm, com.zos.usercatalog.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.zos.usercatalog.domain.RacfUser.class.getName());
+            createCache(cm, com.zos.usercatalog.domain.RacfUser.class.getName() + ".requests");
+            createCache(cm, com.zos.usercatalog.domain.RacfUser.class.getName() + ".groups");
+            createCache(cm, com.zos.usercatalog.domain.RacfUser.class.getName() + ".systems");
+            createCache(cm, com.zos.usercatalog.domain.RacfGroup.class.getName());
+            createCache(cm, com.zos.usercatalog.domain.RacfGroup.class.getName() + ".names");
+            createCache(cm, com.zos.usercatalog.domain.Arm.class.getName());
+            createCache(cm, com.zos.usercatalog.domain.Arm.class.getName() + ".ips");
+            createCache(cm, com.zos.usercatalog.domain.Arm.class.getName() + ".names");
+            createCache(cm, com.zos.usercatalog.domain.ArmIp.class.getName());
+            createCache(cm, com.zos.usercatalog.domain.ZosSystem.class.getName());
+            createCache(cm, com.zos.usercatalog.domain.ZosSystem.class.getName() + ".names");
+            createCache(cm, com.zos.usercatalog.domain.Owner.class.getName());
+            createCache(cm, com.zos.usercatalog.domain.Request.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
