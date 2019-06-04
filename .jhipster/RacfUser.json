@@ -1,0 +1,73 @@
+{
+    "name": "RacfUser",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength",
+                "unique"
+            ],
+            "fieldValidateRulesMaxlength": 8
+        },
+        {
+            "fieldName": "uid",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "esppRequest",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "asozRequest",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "owner",
+            "otherEntityRelationshipName": "racfUser",
+            "relationshipName": "owner",
+            "otherEntityField": "name",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "arm",
+            "otherEntityRelationshipName": "name",
+            "relationshipName": "arm",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "racfGroup",
+            "otherEntityRelationshipName": "name",
+            "relationshipName": "group",
+            "otherEntityField": "name",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "zosSystem",
+            "otherEntityRelationshipName": "name",
+            "relationshipName": "system",
+            "otherEntityField": "name",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20190604100609",
+    "entityTableName": "racf_user",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

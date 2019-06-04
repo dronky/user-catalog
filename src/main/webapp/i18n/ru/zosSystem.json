@@ -1,0 +1,24 @@
+{
+  "userCatalogApp": {
+    "zosSystem": {
+      "home": {
+        "title": "Zos Systems",
+        "createLabel": "Создать новый Zos System",
+        "createOrEditLabel": "Создать или отредактировать Zos System",
+        "search": "Найти Zos System"
+      },
+      "created": "Новый Zos System создан с идентификатором {{ param }}",
+      "updated": "Zos System обновлен с идентификатором {{ param }}",
+      "deleted": "Zos System удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Zos System {{ id }}?"
+      },
+      "detail": {
+        "title": "Zos System"
+      },
+      "name": "Name",
+      "ip": "Ip",
+      "name": "Name"
+    }
+  }
+}
