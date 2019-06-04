@@ -1,0 +1,41 @@
+{
+    "name": "Arm",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "prodIp",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "testIp",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "additionalIp",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "racfUser",
+            "otherEntityRelationshipName": "arm",
+            "relationshipName": "name"
+        }
+    ],
+    "changelogDate": "20190604142359",
+    "entityTableName": "arm",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="arm">
+            <h2><span jhiTranslate="userCatalogApp.arm.detail.title">Arm</span> {{arm.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="userCatalogApp.arm.name">Name</span></dt>
+                <dd>
+                    <span>{{arm.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="userCatalogApp.arm.prodIp">Prod Ip</span></dt>
+                <dd>
+                    <span>{{arm.prodIp}}</span>
+                </dd>
+                <dt><span jhiTranslate="userCatalogApp.arm.testIp">Test Ip</span></dt>
+                <dd>
+                    <span>{{arm.testIp}}</span>
+                </dd>
+                <dt><span jhiTranslate="userCatalogApp.arm.additionalIp">Additional Ip</span></dt>
+                <dd>
+                    <span>{{arm.additionalIp}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/arm', arm.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

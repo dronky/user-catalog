@@ -1,0 +1,34 @@
+{
+    "name": "Owner",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "phone",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "racfUser",
+            "otherEntityRelationshipName": "owner",
+            "relationshipName": "racfUser",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20190604142401",
+    "entityTableName": "owner",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
