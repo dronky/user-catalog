@@ -7,6 +7,11 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Сущности",
+        "racfUser": "Racf User",
+        "racfGroup": "Racf Group",
+        "arm": "Arm",
+        "zosSystem": "Zos System",
+        "owner": "Owner",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
