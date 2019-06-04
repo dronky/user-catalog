@@ -11,6 +11,14 @@
                 </dd>
             </dl>
 
+            <dt><span jhiTranslate="userCatalogApp.arm.armIp">ArmIp</span></dt>
+            <dd>
+                    <span *ngFor="let armIp of arm.armIps; let last = last">
+                        <a [routerLink]="['/arm-ip', armIp?.id, 'view' ]">{{armIp.ip}}</a>{{last ? '' : ', '}}
+                    </span>
+            </dd>
+            <dt>
+
             <button type="submit"
                     (click)="previousState()"
                     class="btn btn-info">

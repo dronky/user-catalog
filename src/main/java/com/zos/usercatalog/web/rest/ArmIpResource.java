@@ -1,11 +1,13 @@
 package com.zos.usercatalog.web.rest;
 
+import com.zos.usercatalog.domain.ArmIp;
 import com.zos.usercatalog.service.ArmIpService;
 import com.zos.usercatalog.web.rest.errors.BadRequestAlertException;
 import com.zos.usercatalog.service.dto.ArmIpDTO;
 
 import io.github.jhipster.web.util.HeaderUtil;
 import io.github.jhipster.web.util.ResponseUtil;
+import io.micrometer.core.annotation.Timed;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -105,6 +107,22 @@ public class ArmIpResource {
         Optional<ArmIpDTO> armIpDTO = armIpService.findOne(id);
         return ResponseUtil.wrapOrNotFound(armIpDTO);
     }
+
+    /**
+     * {@code GET  /arm-ips/arms/:id} : get the "id" armIp.
+     *
+     * @param id the id of the armDTO to retrieve.
+     * @return the {@link ResponseEntity} with status {@code 200 (OK)} and with body the armIpDTO, or with status {@code 404 (Not Found)}.
+     */
+    @GetMapping("/armIps/arms/{id}")
+    @Timed
+    public List<ArmIp> getAllArmIpsForArm(@PathVariable Long id) {
+        log.debug("REST request to get all armIps for arm : {}", id);
+
+        List<ArmIp> armIps = armIpService.findByArmId(id);
+        return armIps;
+    }
+
 
     /**
      * {@code DELETE  /arm-ips/:id} : delete the "id" armIp.

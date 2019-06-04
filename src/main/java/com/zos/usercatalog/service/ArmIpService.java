@@ -1,5 +1,6 @@
 package com.zos.usercatalog.service;
 
+import com.zos.usercatalog.domain.ArmIp;
 import com.zos.usercatalog.service.dto.ArmIpDTO;
 
 import java.util.List;
@@ -49,4 +50,6 @@ public interface ArmIpService {
      * @return the list of entities.
      */
     List<ArmIpDTO> search(String query);
+
+    List<ArmIp> findByArmId(Long armId);
 }

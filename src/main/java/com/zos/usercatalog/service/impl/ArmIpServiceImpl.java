@@ -113,4 +113,16 @@ public class ArmIpServiceImpl implements ArmIpService {
             .map(armIpMapper::toDto)
             .collect(Collectors.toList());
     }
+
+    /**
+     * Search for the armIp corresponding to the query.
+     *
+     * @param armId the query of the search.
+     * @return the list of entities.
+     */
+    @Override
+    public List<ArmIp> findByArmId(Long armId) {
+        List<ArmIp> armIps = armIpRepository.findByArmId(armId);
+        return armIps;
+    }
 }
