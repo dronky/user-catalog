@@ -1,0 +1,24 @@
+{
+  "userCatalogApp": {
+    "zosSystem": {
+      "home": {
+        "title": "Zos Systems",
+        "createLabel": "Create a new Zos System",
+        "createOrEditLabel": "Create or edit a Zos System",
+        "search": "Search for Zos System"
+      },
+      "created": "A new Zos System is created with identifier {{ param }}",
+      "updated": "A Zos System is updated with identifier {{ param }}",
+      "deleted": "A Zos System is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Zos System {{ id }}?"
+      },
+      "detail": {
+        "title": "Zos System"
+      },
+      "name": "Name",
+      "ip": "Ip",
+      "name": "Name"
+    }
+  }
+}
