@@ -1,0 +1,9 @@
+{
+  "userCatalogApp": {
+    "Type": {
+      "null": "",
+      "TEST_DEV": "TEST_DEV",
+      "PRODUCTION": "PRODUCTION"
+    }
+  }
+}
