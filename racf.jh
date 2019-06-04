@@ -1,0 +1,69 @@
+entity RacfUser {
+	name String required maxlength(8) unique,
+    uid Integer,
+    type String,
+    esppRequest String,
+	asozRequest String
+}
+
+entity RacfGroup {
+	name String required maxlength(8) unique,
+    gid Integer
+}
+
+entity Arm {
+	name String required
+}
+
+entity ArmIp {
+	ip String required,
+    type Type,
+    ipVersion IpVersion
+}
+
+entity ZosSystem {
+	name String required,
+    ip String maxlength(39)
+}
+
+entity Owner {
+	name String required,
+	phone String
+}
+
+enum IpVersion {
+    IPV4, IPV6
+}
+
+enum Type {
+    TEST_DEV, PRODUCTION
+}
+
+relationship ManyToOne {
+	RacfUser{arm(name)} to Arm{name}
+}
+
+relationship OneToMany{
+	Arm{armIp} to ArmIp{arm}
+}
+
+relationship OneToOne {
+	RacfUser{owner(name)} to Owner{racfUser}
+}
+
+relationship ManyToMany {
+    RacfUser{group(name)} to RacfGroup{name},
+	RacfUser{system(name)} to ZosSystem{name}
+}
+
+// Set pagination options
+paginate Arm, RacfUser, Owner, RacfGroup, ZosSystem with pagination
+
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
