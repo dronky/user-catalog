@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity Arm.
+    -->
+    <changeSet id="20190604132605-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="arm_id"
+                                 baseTableName="arm_arm_ip"
+                                 constraintName="fk_arm_arm_ip_arm_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="arm"/>
+
+        <addForeignKeyConstraint baseColumnNames="arm_ip_id"
+                                 baseTableName="arm_arm_ip"
+                                 constraintName="fk_arm_arm_ip_arm_ip_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="arm_ip"/>
+        
+    </changeSet>
+</databaseChangeLog>

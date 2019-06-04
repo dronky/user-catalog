@@ -1,0 +1,49 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-arm-ip-heading" jhiTranslate="userCatalogApp.armIp.home.createOrEditLabel">Create or edit a Arm Ip</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!armIp.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id"
+                        readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="userCatalogApp.armIp.ip" for="field_ip">Ip</label>
+                    <input type="text" class="form-control" name="ip" id="field_ip"
+                           formControlName="ip"/>
+                    <div *ngIf="editForm.get('ip').invalid && (editForm.get('ip').dirty || editForm.get('ip').touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('ip').errors.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="userCatalogApp.armIp.type" for="field_type">Type</label>
+                    <select class="form-control" name="type" formControlName="type" id="field_type">
+                        <option value="TEST_DEV">{{'userCatalogApp.Type.TEST_DEV' | translate}}</option>
+                        <option value="PRODUCTION">{{'userCatalogApp.Type.PRODUCTION' | translate}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="userCatalogApp.armIp.ipVersion" for="field_ipVersion">Ip Version</label>
+                    <select class="form-control" name="ipVersion" formControlName="ipVersion" id="field_ipVersion">
+                        <option value="IPV4">{{'userCatalogApp.IpVersion.IPV4' | translate}}</option>
+                        <option value="IPV6">{{'userCatalogApp.IpVersion.IPV6' | translate}}</option>
+                    </select>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
