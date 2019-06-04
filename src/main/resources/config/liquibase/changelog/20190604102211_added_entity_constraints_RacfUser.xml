@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity RacfUser.
+    -->
+    <changeSet id="20190604102211-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="owner_id"
+                                 baseTableName="racf_user"
+                                 constraintName="fk_racf_user_owner_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="owner"/>
+
+        <addForeignKeyConstraint baseColumnNames="arm_id"
+                                 baseTableName="racf_user"
+                                 constraintName="fk_racf_user_arm_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="arm"/>
+
+        <addForeignKeyConstraint baseColumnNames="racf_user_id"
+                                 baseTableName="racf_user_group"
+                                 constraintName="fk_racf_user_group_racf_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="racf_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="group_id"
+                                 baseTableName="racf_user_group"
+                                 constraintName="fk_racf_user_group_group_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="racf_group"/>
+        
+        <addForeignKeyConstraint baseColumnNames="racf_user_id"
+                                 baseTableName="racf_user_system"
+                                 constraintName="fk_racf_user_system_racf_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="racf_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="system_id"
+                                 baseTableName="racf_user_system"
+                                 constraintName="fk_racf_user_system_system_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="zos_system"/>
+        
+    </changeSet>
+</databaseChangeLog>
